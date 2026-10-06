@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ziad Elhussein · AI & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Ziad Elhussein, an AI and machine-learning engineer: multimodal ML, NLP, audio and computer vision. 21 projects with code, results and live demos.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="canonical" href="https://ziadelh.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ziad Elhussein · AI & Machine Learning Engineer">
+  <meta property="og:description" content="Multimodal ML, NLP, audio and computer vision. 21 projects with code, results and live demos.">
+  <meta property="og:url" content="https://ziadelh.github.io/">
+  <meta property="og:image" content="https://ziadelh.github.io/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Ziad Elhussein","jobTitle":"AI & Machine Learning Engineer",
+   "url":"https://ziadelh.github.io/","address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"},
+   "sameAs":["https://github.com/ziadelh","https://www.linkedin.com/in/ziad-elhussein"]}
+  </script>
+  <script>
+    /* apply the saved theme before first paint */
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t);
+          else if (window.matchMedia('(prefers-color-scheme: light)').matches) document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to projects</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__in">
+      <a class="brand" href="#top" aria-label="Ziad Elhussein, home">
+        <span class="brand__mark" aria-hidden="true">ZE</span><span class="brand__name">Ziad Elhussein</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="#pawlytics">Pawlytics</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme" id="theme" type="button" aria-label="Switch colour theme">
+        <svg class="i-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="i-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__net" id="net" aria-hidden="true"></div>
+      <div class="wrap hero__in">
+        <p class="eyebrow reveal">AI & Machine Learning Engineer · Cairo, Egypt</p>
+        <h1 class="reveal">I build ML systems <span class="grad">end to end</span>.</h1>
+        <p class="lead reveal">From data collection and honest evaluation to web apps people can actually use. My graduation project fuses text, audio and image models into one dog-health assistant.</p>
+        <div class="cta reveal">
+          <a class="btn btn--primary" href="#work">See the projects</a>
+          <a class="btn" href="#pawlytics">Pawlytics case study</a>
+          <a class="btn" href="assets/Ziad_Elhussein_CV.pdf" download>Download CV</a>
+        </div>
+        <dl class="stats reveal">
+          <div><dt>Public projects</dt><dd data-count="21">21</dd></div>
+          <div><dt>Live demos</dt><dd data-count="6">6</dd></div>
+          <div><dt>Modalities in one product</dt><dd data-count="3">3</dd></div>
+          <div><dt>Conditions classified</dt><dd data-count="20">20</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- PAWLYTICS -->
+    <section class="section" id="pawlytics" aria-labelledby="pl-title">
+      <div class="wrap">
+        <p class="kicker reveal">Featured · Graduation project</p>
+        <h2 id="pl-title" class="reveal">Pawlytics, a multimodal AI pet-health assistant</h2>
+        <p class="sub reveal">Describe the symptoms, upload a photo, record a sound. Three deep-learning models run behind an Express and Flask app, and a rule-based step merges them into one report with likely conditions, an urgency level and next steps.</p>
+
+        <div class="flow reveal" role="img" aria-label="Architecture: browser, Express and MongoDB web app, Flask orchestrator, text, audio and image models, rule-based fusion, combined report">
+          <span class="node">Browser</span><i aria-hidden="true">→</i>
+          <span class="node">Express + MongoDB</span><i aria-hidden="true">→</i>
+          <span class="node">Flask orchestrator</span><i aria-hidden="true">→</i>
+          <span class="node node--stack"><b>Text</b><b>Audio</b><b>Image</b></span><i aria-hidden="true">→</i>
+          <span class="node node--accent">Rule-based fusion → report</span>
+        </div>
+
+        <div class="models">
+          <article class="model reveal">
+            <h3>Text</h3>
+            <p class="model__arch">Bio_ClinicalBERT + 256-unit head · 20 conditions</p>
+            <p class="model__num"><span data-count="63.8" data-decimals="1">63.8</span><small>%</small></p>
+            <div class="bar" role="img" aria-label="63.8 percent"><span style="--v:63.8%"></span></div>
+            <p class="model__note">Held-out test accuracy, split by dog. Symptom text was generated from diagnoses with rules; a noisier, more realistic run scored 42.2%.</p>
+          </article>
+          <article class="model reveal">
+            <h3>Audio</h3>
+            <p class="model__arch">Frozen YAMNet embeddings + MLP · 8 sound classes</p>
+            <p class="model__num"><span data-count="71.9" data-decimals="1">71.9</span><small>%</small></p>
+            <div class="bar" role="img" aria-label="71.9 percent"><span style="--v:71.9%"></span></div>
+            <p class="model__note">Test accuracy with macro-F1 0.71 on 185 held-out clips. Weakest class: normal playing (recall 0.33).</p>
+          </article>
+          <article class="model reveal">
+            <h3>Image</h3>
+            <p class="model__arch">EfficientNet-B0, frozen backbone + trained head · 9 classes</p>
+            <p class="model__num"><span data-count="73.2" data-decimals="1">73.2</span><small>%</small></p>
+            <div class="bar" role="img" aria-label="73.2 percent"><span style="--v:73.2%"></span></div>
+            <p class="model__note">Test accuracy on 1,752 held-out images merged from 20+ public datasets. The 94.1% cross-validation figure uses gradual unfreezing, a different setup.</p>
+          </article>
+        </div>
+
+        <div class="split">
+          <figure class="shot reveal">
+            <a href="https://github.com/ziadelh/pawlytics"><img src="img/projects/pawlytics.jpg" width="800" height="500" loading="lazy" alt="Pawlytics multi-modal analysis form with symptom text, photo and audio upload"></a>
+          </figure>
+          <ul class="points reveal">
+            <li><b>Any mix of inputs.</b> Symptom text with breed, age and sex, a photo of the skin, eyes or nose, or a short recording. The report merges whatever was supplied.</li>
+            <li><b>An inspectable final step.</b> Fusion uses thresholds and keyword rules instead of another learned model, so every recommendation can be traced.</li>
+            <li><b>Honest evaluation.</b> Text split by dog to avoid leakage, held-out test sets, and the caveats written down in the model cards.</li>
+            <li><b>A real product around the models.</b> Accounts, dog profiles, medical history, a dashboard of past analyses and rate-limited, validated endpoints.</li>
+          </ul>
+        </div>
+
+        <div class="cta reveal">
+          <a class="btn btn--primary" href="https://github.com/ziadelh/pawlytics">View the repository</a>
+          <a class="btn" href="https://github.com/ziadelh/pawlytics/blob/main/docs/MODEL_CARDS.md">Read the model cards</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <p class="kicker reveal">Selected work</p>
+        <h2 id="work-title" class="reveal">All projects</h2>
+        <p class="sub reveal">Every project has its code on GitHub with a short write-up. Six also run live in the browser.</p>
+
+        <div class="tools reveal">
+          <div class="chips" role="group" aria-label="Filter projects" id="chips"></div>
+          <label class="search"><span class="sr">Search projects</span>
+            <input type="search" id="q" placeholder="Search, e.g. OpenCV" autocomplete="off">
+          </label>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+        <div class="grid" id="grid"></div>
+        <p class="empty" id="empty" hidden>No project matches that search.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about">
+        <div>
+          <p class="kicker reveal">About</p>
+          <h2 id="about-title" class="reveal">Trustworthy ML, not just big numbers</h2>
+          <p class="reveal">I collect and clean data, train and honestly evaluate models, and wrap them in web apps. I care about the parts that make ML trustworthy: leak-free splits, class imbalance, reporting held-out results, and being upfront about what a model can't do.</p>
+          <p class="reveal">These projects come from my computer science studies and my graduation project. Right now I'm continuing to develop Pawlytics, exploring vector search and memory-augmented models, and learning React and Docker.</p>
+        </div>
+        <div class="skills reveal">
+          <h3>Toolbox</h3>
+          <dl>
+            <dt>Languages</dt><dd>Python · JavaScript · C++ · SQL · Bash</dd>
+            <dt>ML & AI</dt><dd>PyTorch · TensorFlow · Keras · Hugging Face · scikit-learn · XGBoost · OpenCV</dd>
+            <dt>Data</dt><dd>pandas · NumPy · Jupyter · Kaggle</dd>
+            <dt>Web</dt><dd>Node.js · Express · Flask · MongoDB · SQLite · HTML · CSS · p5.js</dd>
+            <dt>Tools</dt><dd>Git · GitHub · Docker (basics)</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__in">
+        <h2 id="contact-title" class="reveal">Let's talk</h2>
+        <p class="sub reveal">Open to internships, collaboration and project opportunities.</p>
+        <div class="cta reveal">
+          <a class="btn btn--primary" href="mailto:ziadelhussein@gmail.com">ziadelhussein@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/ziad-elhussein">LinkedIn</a>
+          <a class="btn" href="https://github.com/ziadelh">GitHub</a>
+          <a class="btn" href="assets/Ziad_Elhussein_CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <span>© <span id="yr">2026</span> Ziad Elhussein</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="data/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
